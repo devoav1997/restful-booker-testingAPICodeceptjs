@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "codeceptjs": "^3.5.0",
+    "gherkin": "^9.0.0"
+  }
+}
