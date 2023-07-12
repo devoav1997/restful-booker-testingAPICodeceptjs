@@ -2,9 +2,13 @@
 
 module.exports = function() {
   return actor({
-
-    // Define custom steps here, use 'this' to access default methods of I.
-    // It is recommended to place a general 'login' function here.
-
+    haveCredentials(username, password) {
+      this.username = username;
+      this.password = password;
+    },
+    getCredentials() {
+      return { username: this.username, password: this.password };
+    }
   });
 }
+

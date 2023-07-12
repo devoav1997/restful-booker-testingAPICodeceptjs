@@ -2,7 +2,7 @@ exports.config = {
   output: './output',
   helpers: {
     REST: {
-      endpoint: 'http://localhost:3000/api'
+      endpoint: 'https://restful-booker.herokuapp.com'
     },
     JSONResponse: {}
   },
@@ -16,7 +16,7 @@ exports.config = {
   hooks: [],
   gherkin: {
     features: './features/*.feature',
-    steps: ['./step_definitions/steps.js']
+    steps: ['./step_definitions/steps.js', './step_definitions/steps_BookingGetBooking.js']
   },
   plugins: {
     screenshotOnFail: {
