@@ -17,5 +17,5 @@ When('the response is received', () => {
 
 Then('the response status code should be {int}', () => {
   I.seeResponseCodeIs(200);
-});
+});      
 

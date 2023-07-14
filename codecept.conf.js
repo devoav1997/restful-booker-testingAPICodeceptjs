@@ -4,6 +4,9 @@ exports.config = {
     REST: {
       endpoint: 'https://restful-booker.herokuapp.com'
     },
+    AssertWrapper: {
+      "require": "codeceptjs-assert"
+    },
     JSONResponse: {}
   },
   include: {
@@ -16,7 +19,7 @@ exports.config = {
   hooks: [],
   gherkin: {
     features: './features/*.feature',
-    steps: ['./step_definitions/steps.js', './step_definitions/steps_BookingGetBooking.js']
+    steps: ['./step_definitions/steps.js', './step_definitions/steps_BookingGetBooking.js', './step_definitions/steps_BookingCreateBooking.js']
   },
   plugins: {
     screenshotOnFail: {

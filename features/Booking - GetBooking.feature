@@ -6,3 +6,4 @@ Scenario: Retrieve booking information by ID
   Given I send a GET request to "/booking/1"
   When the response is received
   Then the response status code should be 200
+
